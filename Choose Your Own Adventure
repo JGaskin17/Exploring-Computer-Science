@@ -1,0 +1,88 @@
+char name[20]; 
+char buddy[20];
+int ability;
+int location;
+printf("             Introduction               \n");
+printf("middle1     middle2     middle3 \n");
+printf("ending      ending      ending\n");
+printf(" 1 2 3      4 5 6        7 8 9\n");
+//Introduction
+printf("\nHello you have been handpicked to recieve one of three superhuman abilities. Now that you know why you are here, could you tell me your name?\n");
+scanf("%s", &name);
+printf("Okay. Nice to meet you, ", name, ", I will allow you to have one ability or ability set. Would you like to have Super Speed, the Black Air Force Package which will give you Enhanced Ignorance, Super Strength, a pair of indestructible Black Air Force Ones, and the durability of 50 Cent which means you can survive 9 bullets at a time, or would you like to recieve Future Sight. Be aware that with each option you choose there are a specific set of locations to choose from that you will have to live at.\n");
+
+printf (" 1). Super Speed\n 2). Black Air Force Package\n 3). Future Sight\n Type the number next to the ability you desire: ");
+scanf("%i", &ability);
+printf ("My next question is what is the name of your closest friend that you would like to have by your side throughout your lifes story?\n");
+scanf("%s", &buddy);
+printf ("Ok, so you have chosen, ", buddy, ".");
+printf ("Make sure you make smart decisions with your power because if you don't you never know what could happen. It might be like the movies, you might get captured by the government. The government might approve and make you a government superhero. They might even make you a weapon for war. So just stay safe and you probably should be a hero.");
+if (ability == 1) {
+    //Middle 1
+    printf("I see, so you have chosen, Super Speed, good decision. You can do a lot of things with that power. It is very useful for fighting crime. You might even become the next Flash! ");
+    printf("Now you shall choose where you live.\n");
+    //End 1
+    printf ("1). So ", name, " would you like to live in New York and join Avengers.\n");
+    //End 2
+    printf ("2). Would you like to live in Central City and only have a team of 5 people        including ", buddy, " helping you.\n");
+    //End 3
+    printf ("3). Or would you like to live in Nevada and only reveal your powers to ", buddy, " and your closest friends and use them in secret.\n");
+    printf ("Which option would you like to choose ", name, "? "); 
+    scanf("%i", &location);
+    if (location == 1){
+        printf("Oh, New York smart choice!\n");
+    }
+    if (location == 2){
+        printf("Oh, Central City smart choice!\n");
+    }
+    if (location == 3){
+        printf("Oh, Nevada smart choice!\n");
+    }
+}
+
+if (ability == 2) {
+    //Middle 2
+    printf("I see, so you have chosen, the Black Air Force package, good decision. You could become a tank. You can become one of the strongest heroes ever. You could even cause chaos or create peace.");
+    printf("Now you shall choose where you live.\n");
+    //End 4
+    printf ("1). So ", name, " would you like to live in Chicago and become the biggest name on the streets.\n");
+    //End 5
+    printf ("2). Would you like to live in Florida and occasionally fight crime alongside ", buddy, ".\n");
+    //End 6
+    printf ("3). Or would you like to go to Malibu, live a safe life and stay under the radar while being neighbors with ", buddy, ".\n");
+    printf ("Which option would you like to choose ", name, "? ");
+    scanf("%i", &location);
+    if (location == 1){
+        printf("Oh, Chicago dangerous choice! Make sure you know who your friends are and make sure they have your back, because in Chicago... you're never safe. Don't get involved in too much trouble.\n");
+    }
+    if (location == 2){
+        printf("Oh, Florida nice choice! Always watch your back, for alligators and people. Maybe visit Disney World a few times. But always be aware of your surroundings.\n");
+    }
+    if (location == 3){
+        printf("Oh, Malibu smart choice! Make sure you get a good job. Don't cause too much trouble. You also might want to stay low about your powers.\n");
+    }
+}
+
+if (ability == 3) {
+    //Middle 3
+    printf("I see, so you have chosen, the ability Future Sight, good decision. You could dodge every attack. You could win every fight by predicting your opponents. You could protect anyone with that power. ");
+    printf("Now you shall choose where you live.\n");
+    //End 7
+    printf ("1). So ", name, " would you like to live in Detroit and slowly gain more and more recognition until you control the streets.\n");
+    //End 8
+    printf ("2). Would you like to live in Oakland and become a voice of reason and rarely involve yourself in crime, with ", buddy, " by your side to keep you leveled.\n");
+    //End 9
+    printf ("3). Or would you like to go to North Carolina, and live a very peaceful life and rarely use your powers.\n");
+    printf ("Which option would you like to choose ", name, "? ");
+    scanf("%i", &location);
+    if (location == 1){
+        printf("Oh, Detroit dangerous choice! Make sure you stay on very high alert and use your powers to watch out for your opps, because if you don't you might live a short life...\n");
+    }
+    if (location == 2){
+        printf("Oh, Oakland nice choice! Try to make as little enemies as possible and unite the community as opposed to seperating it.\n");
+    }
+    if (location == 3){
+        printf("Oh, North Carolina smart choice! So you have chosen to live in North Carolina in a very safe area, live peacefully and rarely use your powers. It will be a safe and simple life but just make sure to use your powers consistently or else you might lose control of them!\n");
+    }
+}
+printf ("Now everything else you decide to do with your new power is completely your choice, but make good decisions. But I strongly reccomend that you spend a few years mastering your new powers. Also if you are a superhero, you might want to disguise yourself.\n");
