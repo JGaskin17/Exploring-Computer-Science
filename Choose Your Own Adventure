@@ -3,8 +3,8 @@ char buddy[20];
 int ability;
 int location;
 printf("             Which Power Do You Want?               \n");
-printf("\nSuper Speed     Black Air Force Package     Future Sight \n");
-printf("\nNew York             Chicago                  Detroit \nCentral City         Florida                  Oakland \nNevada                Malibu                North Carolina\n");
+printf("\n     Super Speed                                Black Air Force Package                                 Future Sight \n");
+printf("\nGo to New York and join the Avengers     Go to Chicago and make alliances             Go to Detroit but stay on high alert \nGo to Central City and make a team       Go to Florida and fight crime                Go to Oakland and unite the community \nGo to Nevada and live with a secret     Go to Malibu and live a normal life       Go to North Carolina and live peacefully\n");
 //Introduction
 printf("\nHello you have been handpicked to recieve one of three superhuman abilities. Now that you know why you are here, could you tell me your name?\n");
 scanf("%s", &name);
@@ -29,13 +29,13 @@ if (ability == 1) {
     printf ("Which option would you like to choose ", name, "? "); 
     scanf("%i", &location);
     if (location == 1){
-        printf("Oh, New York smart choice!\n");
+        printf("Oh, New York smart choice! Your powers will be useful there since there is so much traffic! Make sure you know your allies but know your enemies better! Use your powers as strategically as possible and protect the innocent.\n");
     }
     if (location == 2){
-        printf("Oh, Central City smart choice!\n");
+        printf("Oh, Central City smart choice! Watch out for other Meta-Humans because they will be extremely strong! Also, get a good job because there are tons of high paying jobs in Central City.\n");
     }
     if (location == 3){
-        printf("Oh, Nevada smart choice!\n");
+        printf("Oh, Nevada smart choice! Don't get too hot running around often. Don't overheat using your powers because it could be extremely fatal.\n");
     }
 }
 
